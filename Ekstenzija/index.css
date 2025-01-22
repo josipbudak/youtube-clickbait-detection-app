@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    width: 330px;
+    background-color: rgb(226, 125, 9);
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+button {
+    background-color: white;
+    color: rgb(226, 125, 9);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 20px;
+    width: 100%;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color:black;
+    color: white;
+}
+
+#result, #model1-result, #model2-result, #json-result {
+    display: none;
+    margin-top: 20px;
+}
+
+#result.show, #model1-result.show, #model2-result.show, #json-result.show {
+    display: block;
+}
+
+.result-item, .model-item {
+    margin-bottom: 10px;
+}
+
+.result-item img, .model-item img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.result-title, .model-title {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.result-channel, .model-content {
+    color: #555;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.result-description {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.result-stats, .model-stats {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    flex-wrap: wrap; /* Add this to allow wrapping */
+}
+
+.result-stats div, .model-stats div {
+    flex: 1 1 45%; /* Adjust the flex property for better spacing */
+    text-align: center;
+    margin-bottom: 10px; /* Add margin-bottom for spacing between stats */
+}
+
+#result, #model1-result, #model2-result {
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.result-item {
+    display: flex;
+    justify-content: center;
+}
+
+.result-item img {
+    margin-bottom: 10px; 
+}
+.result-item .result-title{
+    text-align: center;
+}
+.result-title {
+    font-size: 20px; 
+    color: #333; 
+}
+
+.result-channel, .result-stats div {
+    color: #666; 
+}
+
+.result-main-stats {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.result-main-stats div {
+    flex: 1;
+    text-align: center;
+    margin: 0 10px; 
+}
